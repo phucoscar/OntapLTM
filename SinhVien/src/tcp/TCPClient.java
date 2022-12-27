@@ -27,6 +27,7 @@ public class TCPClient {
             out = new DataOutputStream(socket.getOutputStream());
             in = new DataInputStream(socket.getInputStream());
             obout = new ObjectOutputStream(socket.getOutputStream());
+            obin = new ObjectInputStream(socket.getInputStream());
 
             SinhVien sinhVien = new SinhVien("B19DCCN506", "Vu Kim Phuc", 9852, "rmi://192.168.1.129:9852/LTM");
             obout.writeObject(sinhVien);

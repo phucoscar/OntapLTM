@@ -11,9 +11,11 @@ public class ServiceImpl extends UnicastRemoteObject implements Service {
 
     @Override
     public int ucln(int a, int b) throws RemoteException {
-        if (b == 0)
-            return a;
-        return ucln(b, a % b);
+       while (a != b) {
+           if (a > b)  a = a - b;
+           else b = b - a;
+       }
+       return b;
     }
 
     @Override
