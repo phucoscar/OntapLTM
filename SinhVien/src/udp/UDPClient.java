@@ -18,7 +18,6 @@ public class UDPClient {
     ObjectInputStream obin;
     ObjectOutputStream obout;
 
-    private int port = 9853;
 
     public UDPClient() {
         try {
