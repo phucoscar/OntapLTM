@@ -11,10 +11,9 @@ public class SinhVien implements Serializable {
     private String url;
 
     public SinhVien() {
-
     }
 
-    public SinhVien(String maSV, String hoTen, int port, String url) {
+    public SinhVien(String maSV, String hoTen, String url, int port) {
         this.maSV = maSV;
         this.hoTen = hoTen;
         this.port = port;
